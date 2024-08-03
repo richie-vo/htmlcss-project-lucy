@@ -157,3 +157,171 @@ button {
     font-size: 1.4rem;
     font-weight: 600;
 }
+
+.sign-up-btn:hover {
+    background: #4d5187;
+    color: #fff;
+}
+/* ======================== HERO ======================== */
+.hero {
+    margin-top: 92px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.hero__media {
+    position: relative;
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    background: #fe997b;
+    border: 3px solid #fff;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__decor-right {
+    top: 17px;
+    right: -42px;
+}
+
+.hero__decor-left {
+    bottom: 10px;
+    left: -58px;
+}
+
+.hero__img-wrap-small {
+    margin: 0 0 -58px -24px;
+    align-self: flex-end;
+    width: 186px;
+    height: 244px;
+    background: #faa7ad;
+    border: 2px solid #fad8da;
+}
+
+.hero__card {
+    padding: 19px;
+    position: absolute;
+    left: 129px;
+    bottom: 0;
+    width: 250px;
+    height: 156px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero__card-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero__card-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fec23f;
+    object-fit: cover;
+}
+
+.hero__card-thumb-bot {
+    background: #6597c2;
+}
+
+.hero__card-heading {
+    color: #181e52;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.hero__card-skeleton {
+    margin-top: 6px;
+    width: 118px;
+    height: 4px;
+    border-radius: 999px;
+    background: #ebebf2;
+}
+
+.hero__card-skeleton:last-child {
+    width: 39px;
+}
+
+.hero__card-divider {
+    margin: 20px 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 999px;
+    background: #f2f2f2;
+}
+
+.hero__title {
+    color: var(--primary-color-dark-blue);
+    font-family: Sora, sans-serif;
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 115.152%;
+}
+
+.hero__desc {
+    margin-top: 24px;
+    width: 391px;
+}
+
+.hero__cta {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero__cta-btn {
+    width: 189px;
+    height: 60px;
+    background: var(--primary-color-orange);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    color: #fff;
+}
+
+.hero__cta-btn--icon {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.hero__cta-link {
+    color: var(--primary-color-dark-blue);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
