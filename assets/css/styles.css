@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-dark-blue: #000958;
+    --primary-color-dark-gray: #5e6085;
+    --primary-color-light-gray: #656689;
+    --primary-color-orange: #ff5b2e;
+    --bg-color-peach: #fff6ed;
+    --bg-color-floral-white: #fffaf5;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ======================== COMMON ======================== */
+
+a,
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.container {
+    width: 1140px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+.break-all {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.section-title {
+    color: var(--primary-color-dark-blue);
+    font-family: "Sora", sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 119.231%;
+}
+
+.section-subtitle {
+    color: var(--primary-color-dark-gray);
+    font-family: "Sora", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.section-desc {
+    color: var(--primary-color-light-gray);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 187.5%;
+}
+
+.body-text {
+    color: var(--primary-color-light-gray);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 171.429%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 117px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 100%;
+    border: 1px solid #ff5b2e;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
