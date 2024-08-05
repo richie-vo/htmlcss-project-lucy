@@ -99,7 +99,7 @@ button {
 }
 
 .btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 117px;
@@ -109,7 +109,7 @@ button {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 100%;
-    border: 1px solid #ff5b2e;
+    border: 1px solid var(--primary-color-orange);
 }
 
 .btn:hover {
@@ -609,7 +609,7 @@ button {
     background: #ff5d31;
     opacity: 1;
 }
-/* ======================== ABOUT ======================== */
+/* ======================== SERVICES ======================== */
 .services {
     padding: 68px 0 100px;
     background: var(--bg-color-peach);
@@ -716,6 +716,121 @@ button {
 }
 
 .services__cta:hover {
+    opacity: 0.6;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+/* ======================== STAFF ======================== */
+.staff {
+    padding: 130px 0;
+}
+
+.staff__inner {
+    text-align: center;
+}
+
+.staff___list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+}
+
+.staff__img-wrap {
+    position: relative;
+    margin: 0 16px;
+    border-radius: 130px;
+}
+
+.staff__img-wrap::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 100%;
+    left: -20px;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.staff__img-wrap::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 93.5%;
+    border-radius: inherit;
+}
+
+.staff__item:nth-child(1) .staff__img-wrap::before {
+    background-image: url(../img/staff-decor-1.svg);
+}
+
+.staff__item:nth-child(1) .staff__img-wrap::after {
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff__item:nth-child(2) .staff__img-wrap::before {
+    background-image: url(../img/staff-decor-2.svg);
+}
+
+.staff__item:nth-child(2) .staff__img-wrap::after {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.staff__item:nth-child(3) .staff__img-wrap::before {
+    background-image: url(../img/staff-decor-3.svg);
+}
+
+.staff__item:nth-child(3) .staff__img-wrap::after {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.staff__item:nth-child(4) .staff__img-wrap::before {
+    background-image: url(../img/staff-decor-4.svg);
+}
+
+.staff__item:nth-child(4) .staff__img-wrap::after {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff__item:nth-child(even) .staff__img-wrap::before {
+    bottom: initial;
+    top: 19px;
+    background-position: top;
+}
+
+.staff__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.staff__info {
+    margin-top: 29px;
+    text-align: center;
+    line-height: 1;
+}
+
+.staff__name {
+    margin-top: 14px;
+    color: var(--primary-color-dark-blue);
+    font-family: Sora, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.staff__btn {
+    margin-top: 48px;
+    min-width: 193px;
+    height: 56px;
+    color: var(--primary-color-orange);
+}
+
+.staff__btn:hover {
     opacity: 0.6;
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
 }
