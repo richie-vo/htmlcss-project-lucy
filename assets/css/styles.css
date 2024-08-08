@@ -1214,3 +1214,132 @@ button {
     font-weight: 600;
     line-height: 154.545%;
 }
+/* ======================== FOOTER ======================== */
+.footer {
+    padding: 52px 0 48px;
+    background: linear-gradient(
+        to right,
+        var(--bg-color-peach) 43%,
+        transparent 42%
+    );
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__left {
+    width: 41%;
+    padding-top: 62px;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    width: 268px;
+    height: 46px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    background: rgb(255, 255, 255, 0.6);
+}
+
+.subscribe-form__input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    padding: 16px 22px;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+}
+
+.subscribe-form__input::placeholder {
+    color: var(--primary-color-light-gray);
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 116.667%;
+}
+
+.subscribe-form__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--primary-color-orange);
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe-form__submit:hover {
+    opacity: 0.8;
+}
+
+.social-heading {
+    margin-top: 68px;
+    color: var(--primary-color-dark-blue);
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 111.111%;
+}
+
+.social-list {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background: #fff;
+}
+
+.social-item:hover {
+    opacity: 0.8;
+}
+
+.footer__right {
+    margin-left: 129px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 58px 136px;
+}
+
+.footer__heading {
+    color: var(--primary-color-dark-blue);
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 111.111%;
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__link {
+    line-height: 2;
+}
+
+.copy-right {
+    margin-top: 52px;
+    text-align: center;
+    color: var(--primary-color-light-gray);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 116.667%;
+    opacity: 0.5;
+}
